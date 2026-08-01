@@ -5,6 +5,7 @@ workflows:
     scripts:
       - name: Build Android APK
         script: |
+          gradle wrapper
           ./gradlew assembleDebug
     artifacts:
       - "**/*.apk"
